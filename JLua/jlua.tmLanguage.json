@@ -1,0 +1,67 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "JLua",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+
+		},
+		{
+			"include": "#functions"
+		},
+		{
+            "include": "#print"
+        },
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#condition"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.jlua",
+				"match": "\\b(ifc|while|for|return|then|clear|local|global|end)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.jlua",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jlua",
+					"match": "\\\\"
+				}
+			]
+		},
+		"functions": {
+			"name": "support.function.jlua",
+			"match": "\\b(function|new|delete)\\b"
+
+	    },
+		
+		"print": {
+			"name": "print.control.jlua",
+			"match": "\\b(print|println|WriteLine)\\b"
+
+		},
+		"comment": {
+            "name": "comment.line.jlua",
+			"begin": ">>\\*",
+            "end": "\\<<"
+		},
+		"condition": {
+			"name": "condition.jlua",
+			"match": "\\b(ifc|else|elif)\\b"
+
+		}
+	},
+    "scopeName": "source.jlua"
+	}
+
