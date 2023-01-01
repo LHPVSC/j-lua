@@ -1,0 +1,14 @@
+hi = "Yo"
+ifc hi == "yo" then
+condition = true
+con2 = false
+print(hi)
+local function new main()
+   print("Hi!")
+end
+
+ifc con2 == true then
+   local function delete main()
+   
+end
+
