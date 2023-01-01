@@ -16,13 +16,16 @@
             "include": "#print"
         },
 		{
-			"include": "#comment"
-		},
-		{
 			"include": "#if"
 		},
 		{
 			"include": "#boolean"
+		},
+		{
+			"include": "#dictionary"
+		},
+		{
+			"include": "#variable"
 		}
 	],
 	"repository": {
@@ -54,11 +57,6 @@
 			"match": "\\b(print|println|WriteLine)\\b"
 
 		},
-		"comment": {
-            "name": "comment.line.jlua",
-			"begin": ">>\\*",
-            "end": "\\<<"
-		},
 		"if": {
 			"name": "condition.jlua",
 			"match": "\\b(ifc|else|elif)\\b"
@@ -67,7 +65,12 @@
 		"boolean": {
 			"name": "constant.language.boolean.jlua",
 			"match": "\\b(true|false)\\b"
+		},
+		"dictionary": {
+			"name": "variable.dictionary.jlua",
+			"match": "\\b(dict)\\b"
 		}
+
 		
 	},
     "scopeName": "source.jlua"
