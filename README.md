@@ -15,11 +15,11 @@ For now, You can do the following things with J-Lua:
 
 •Booleans
 
+•Dictionaries
+
 # W.I.P
 
-Comments (Coming shortly!)
-
-Dictonaries (Coming shortly!)
+Comments (Coming shortly!) `Maybe in around 2..3 days`
 
 Custom modules (Not started)
 
