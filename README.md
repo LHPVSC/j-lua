@@ -17,9 +17,9 @@ For now, You can do the following things with J-Lua:
 
 # W.I.P
 
-Comments (Coming shortly)
+Comments (Coming shortly!)
 
-Dictonaries (Not started)
+Dictonaries (Coming shortly!)
 
 Custom modules (Not started)
 
