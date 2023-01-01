@@ -1,0 +1,25 @@
+{
+  "name": "jlua",
+  "displayName": "JLua",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jlua",
+      "aliases": ["JLua", "jlua"],
+      "extensions": [".jl",".jlua",".jlu",".jla"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jlua",
+      "scopeName": "source.jlua",
+      "path": "./syntaxes/jlua.tmLanguage.json"
+    }]
+  }
+}
