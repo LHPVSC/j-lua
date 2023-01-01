@@ -19,7 +19,10 @@
 			"include": "#comment"
 		},
 		{
-			"include": "#condition"
+			"include": "#if"
+		},
+		{
+			"include": "#boolean"
 		}
 	],
 	"repository": {
@@ -42,7 +45,7 @@
 		},
 		"functions": {
 			"name": "support.function.jlua",
-			"match": "\\b(function|new|delete)\\b"
+			"match": "\\b(function|new|delete|execute)\\b"
 
 	    },
 		
@@ -56,11 +59,16 @@
 			"begin": ">>\\*",
             "end": "\\<<"
 		},
-		"condition": {
+		"if": {
 			"name": "condition.jlua",
 			"match": "\\b(ifc|else|elif)\\b"
 
+		},
+		"boolean": {
+			"name": "constant.language.boolean.jlua",
+			"match": "\\b(true|false)\\b"
 		}
+		
 	},
     "scopeName": "source.jlua"
 	}
