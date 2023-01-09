@@ -13,8 +13,8 @@
 			"include": "#functions"
 		},
 		{
-                        "include": "#print"
-                },
+            "include": "#writeline"
+        },
 		{
 			"include": "#if"
 		},
@@ -26,13 +26,19 @@
 		},
 		{
 			"include": "#variable"
+		},
+		{
+			"include": "#time"
+		},
+		{
+			"include": "#semicolon"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.jlua",
-				"match": "\\b(ifc|while|for|return|then|clear|local|global|end)\\b"
+				"match": "\\b(ifc|while|for|return|then|clear|local|global|end|script|ls|Client|display)\\b"
 			}]
 		},
 		"strings": {
@@ -48,13 +54,12 @@
 		},
 		"functions": {
 			"name": "support.function.jlua",
-			"match": "\\b(function|new|delete|execute)\\b"
+			"match": "\\b(function|new|delete|execute|println|func|colour|VT|Parent|CCV|name)\\b"
 
 	    },
-		
-		"print": {
+		"writeline": {
 			"name": "print.control.jlua",
-			"match": "\\b(print|println|WriteLine)\\b"
+			"match": "\\b(WriteLine)\\b"
 
 		},
 		"if": {
@@ -64,11 +69,19 @@
 		},
 		"boolean": {
 			"name": "constant.language.boolean.jlua",
-			"match": "\\b(true|false)\\b"
+			"match": "\\b(true|false|show|hide)\\b"
 		},
 		"dictionary": {
 			"name": "variable.dictionary.jlua",
 			"match": "\\b(dict)\\b"
+		},
+		"time": {
+			"name": "support.time.jlua",
+			"match": "\\b(wait)\\b"
+		},
+		"semicolon": {
+		"name": "punctuation.support.jlua",
+		"match": ";"
 		}
 
 		
